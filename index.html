@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Frontend Mentor | Results summary component</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href="/dist/output.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="./index.js" defer></script>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main class="h-screen justify-center lg:justify-normal grid lg:place-items-center bg-blue-50">
+    <div class="component-wrapper lg:grid lg:grid-cols-2 lg:w-2/4 rounded-2xl p-6 lg:p-0 max-w-prose">
+      <div class="result-container text-center rounded-b-3xl bg-red-300 -m-6 px-6 py-7 text-white grid place-items-center mb-3 lg:m-0 lg:p-5 lg:rounded-br-none lg:rounded-l-2xl">
+        <h1 class="h1 text-neutral-300 text-lg">Your Result</h1>
+        <div class="score-bubble rounded-full my-5 grid place-items-center">
+          <div class="">
+            <span class="score block text-6xl font-extrabold">76</span>
+            <span class="block text-neutral-300 text-lg">of 100</span>
+          </div>
+        </div>
+        <div class="result-desc">
+          <h2 class="h2 text-2xl mb-2">Great</h2>
+          <p class="text-base font-medium text-neutral-300">You scored higher than 65% of the people who have taken these tests!</p>
+        </div>
+      </div>
+      <div class="summary-container text-left mt-5 lg:bg-white lg:mt-0 lg:p-5 lg:rounded-r-2xl">
+        <span class="block mb-4 text-lg font-bold text-blue-950">Summary</span>
+        <div class="skills-container grid gap-3">
+          <div class="flex justify-between p-4 bg-red-50 rounded-xl hover:bg-red-100 transition-opacity">
+            <div class="flex align-middle">
+              <img class="mr-1" src="./assets/images/icon-reaction.svg" alt="">
+              <span class="skill text-red-500 font-light">Reaction</span>
+            </div>
+            <span class="skill-score text-neutral-400"><span class="text-blue-950 mr-1">80</span>/100</span>
+          </div>
+          <div class="flex justify-between p-4 bg-yellow-50 rounded-xl hover:bg-yellow-100 transition-opacity">
+            <div class="flex align-middle">
+              <img class="mr-1" src="./assets/images/icon-memory.svg" alt="">
+              <span class="skill text-yellow-500 font-light bg-">Memory</span>
+            </div>
+            <span class="skill-score text-neutral-400"><span class="text-blue-950 mr-1">92</span>/100</span>
+          </div>
+          <div class="flex justify-between p-4 bg-green-50 rounded-xl hover:bg-green-100 transition-opacity">
+            <div class="flex align-middle">
+              <img class="mr-1" src="./assets/images/icon-verbal.svg" alt="">
+              <span class="skill text-green-500 font-light bg-">Verbal</span>
+            </div>
+            <span class="skill-score text-neutral-400"><span class="text-blue-950 mr-1">61</span>/100</span>
+          </div>
+          <div class="flex justify-between p-4 bg-blue-50 rounded-xl hover:bg-blue-100 transition-opacity">
+            <div class="flex align-middle">
+              <img class="mr-1" src="./assets/images/icon-visual.svg" alt="">
+              <span class="skill text-blue-500 font-light bg-">Visual</span>
+            </div>
+            <span class="skill-score text-neutral-400"><span class="text-blue-950 mr-1">73</span>/100</span>
+          </div>
+          <button class="bg-blue-950 text-white py-3 px-5 rounded-full w-full mt-2 text-lg continue">Continue</button>
+        </div>
+      </div>
+    </div>
+    <div class="attribution lg:absolute lg:bottom-0 lg:left-1/2 lg:-translate-x-1/2">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.frontendmentor.io/profile/fabsantana" target="_blank">Fabricio Santana</a>.
+    </div>
+  </main>
+  
+</body>
+</html>
